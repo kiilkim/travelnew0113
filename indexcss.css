@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+/*헤더스타일*/
+
+.header {
+    background-color: white;
+    padding:0px;
+    margin:0px;
+    text-align: center;
+    font-size: 25px;
+  
+}
+
+.hr_main {
+    padding: 0;
+
+
+}
+/* 3개의 동일하지 않은 컬럼 생산 서로 옆으로 띄워진*/
+.row {
+    text-align: center;
+}
+
+/*main 컬럼*/
+.column {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+    height: 600px;
+}
+/*left and right 컬럼*/
+
+
+.column.side {
+    width:25%;
+}
+
+.column.middle {
+    width:50%;
+}
+/*bg컬럼*/
+.columnBg {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+    height: 1500px;
+}
+
+.columnBg.side {
+    width: 25%;
+}
+.columnBg.middle {
+    width:50%;
+}
+/*char컬럼*/
+.columnChar {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+    height: 1000px;
+    text-align: center;
+    
+}
+
+.columnChar.side {
+    width: 33%;
+    text-align: center;
+}
+.columnChar.middle {
+    width:33%;
+    text-align: center;
+}
+
+.charTable, .charTd, .charTh {
+    border: 1px solid black;
+    
+}
+
+
+/*깔끔한 플루트 컬럼들후*/
+
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+
+
+.footer {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/*반응형 웹 ,3컬럼을 옆에쌓지않고 쌓게한다?*/
+
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}

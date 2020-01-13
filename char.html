@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="indexcss.css" rel="stylesheet" type="text/css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+      function char_next(){
+       if(document.charForm.selChar=="김아무개") {
+           location.href="kim.html";
+       } 
+       
+      
+    
+    }
+     
+    </script>
+  
+
+   
+    <div class="header">
+        <h1>피란수도_부산 ver1.0</h1>
+        <hr class="hr_char">
+        <p>
+            <!--
+                앞의 아이디 정보를 가져와서 여기 폼안의 input에다가 넣거나 뭔가 아이디 출력을 받아올방법?
+            -->
+            ''님 캐릭터를 선택하세요
+        </p>
+        <hr class="hr_char">
+    </div>
+
+    <div class ="row">
+        <!--kim 자리
+            해결해야할 것.
+            1. 그림아래 테이블, 설명위치하게 하기
+        -->
+        <div class="columnChar side" style="background-color: white;">
+
+            <span style="color:white">kim char</span>
+
+            <br><br>
+            <img src="img/wisdom.jpg" width="300" height="200" style="float: left;">
+            <br><br>
+
+            
+
+            <table class ="charTable">
+                <tr>
+                    <th class ="charTh">능력</th>
+                    <th class ="charTh">수치</th>
+                </tr>
+                <tr>
+                    <th class ="charTh">명성</th>
+                    <td class ="charTd">30</td>
+                </tr>
+                <tr>
+                    <th class ="charTh">체력</th>
+                    <td class ="charTd">100</td>
+                </tr>
+            </table>
+            
+
+           <p>
+               
+           </p>
+          
+        </div>
+
+        <!--kang 자리-->
+
+        <div class="columnChar middle" style="background-color: white;">
+            <br><br>
+            <img src="img/farmer.jpg" width="200" height="200">
+            <br><br>
+            <table>
+                <tr>
+                    <th>능력</th>
+                    <th>수치</th>
+                </tr>
+                <tr>
+                    <th>명성</th>
+                    <td>30</td>
+                    
+                </tr>
+                <tr>
+                    <th>체력</th>
+                    <td>100</td>
+                    
+                </tr>
+            </table>
+
+      
+
+            <form method="post" name="charForm">
+
+                캐릭터선택:
+                <select name="selChar">
+
+                    <option value="김">김아무개</option>
+                    <option value="강">강아무개</option>
+                    <option value="현">현아무개</option>
+
+                </select>
+
+                
+
+                <input type="button" value="시작하기" onclick="char_next()">
+
+            </form>
+        
+        </div>
+
+        <!--hyun 자리-->
+           
+        <div class="columnChar side" style="background-color: white;">
+
+            <span style="color:white"> hyun char</span>
+            <br><br>
+            <img src="img/alert.jpg" width="300" height="200" style="float: right;">
+            <br><br>
+
+            <table class ="charTable">
+                <tr>
+                    <th class ="charTh">능력</th>
+                    <th class ="charTh">수치</th>
+                </tr>
+                <tr>
+                    <th class ="charTh">명성</th>
+                    <td class ="charTd">30</td>
+                </tr>
+                <tr>
+                    <th class ="charTh">체력</th>
+                    <td class ="charTd">100</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3>역사 문화 인식은 우리를 풍요롭게 한다.</h3>
+    </div>
+
+    
+</body>
+</html>
