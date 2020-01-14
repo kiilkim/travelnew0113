@@ -10,34 +10,9 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="text/javascript">
-        function main_next() {
-        
-        a=prompt("환영합니다. 아이디확인해주세요!")
-
-        if(isNaN(a)==true) {
-            alert(a+"님 환영합니다.");
-            location.href="bg.html";
-
-        }
-            
-        if(document.mainForm.id.length==0) {
-        alert("아이디입력하세요");
-        document.mainForm.id.focus();
-        return;
-    }
-        if(document.mainForm.pass.length==0) {
-        alert("비밀번호를입력하세요");
-        document.mainForm.pass.focus();
-        return;
-    }
-
-        
-
-    }
-
-
-    </script>
+    <script src="indexjs.js" type="text/javascript">
+      
+ </script>
   
    
   
@@ -47,7 +22,7 @@
         <h1>피란수도_부산 ver1.0</h1>
         <hr class="hr_main">
         <p>
-            "1950년 6.25 아무개의 피난, 성장."
+            "1950. 06. 25 '아무개'의 피난과 성장."
         </p>
         <hr class="hr_main">
     </div>
@@ -57,7 +32,7 @@
         <div class="column middle" style="background-color: white;">
 
             <br><br>
-            <img src="img/메인피란.jpg" width="400" height="300">
+            <img src="img/main.jpg" width="400" height="300">
             <br><br>
 
             <form action="bg.html" method="post" name="mainForm">
