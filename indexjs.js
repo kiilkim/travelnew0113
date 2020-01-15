@@ -13,7 +13,7 @@ function main_next() {
 function char_next() {
     a = prompt("한국전쟁 연도는?")
 
-    if(document.charForm.selChar.kim) {
+   /*  if(document.charForm.selChar.kim) {
         location.href="bgkim.html"
     }
     if(document.charForm.selChar.kang) {
@@ -21,8 +21,8 @@ function char_next() {
     }   
     if(document.charForm.selChar.sim) {
         location.href="bgsim.html"
-    }
-
+    } */
+    location.href="bgsim.html"
    
 }
 
