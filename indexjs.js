@@ -4,11 +4,28 @@ function main_next() {
 
     if(isNaN(a)==true) {
         alert(a+"님 환영합니다.");
-        location.href="bg.html";
+        location.href="char.html";
 
     }
         
+}
 
+function char_next() {
+    a = prompt("한국전쟁 연도는?")
+
+    if(document.charForm.selChar.kim) {
+        location.href="bgkim.html"
+    }
+    if(document.charForm.selChar.kang) {
+        location.href="bgkang.html"
+    }   
+    if(document.charForm.selChar.sim) {
+        location.href="bgsim.html"
+    }
+
+   
+}
+
+function sim01_next() {
     
-
 }
