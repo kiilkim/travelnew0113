@@ -9,6 +9,9 @@ function bgsim_next() {
 function sim01_next() {
     location.href="sim02.html"
 }
+function char_next() {
+    location.href="bgsim.html"
+}
 
 function sim02_Townnext() {
     location.href="sim03Town.html"
@@ -32,8 +35,3 @@ function sim05_next() {
     location.href="sim06.html";
 }
 
-
-function bg12mouse() {
-    
-    
-}
