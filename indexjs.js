@@ -22,7 +22,7 @@ function char_next() {
     if(document.charForm.selChar.sim) {
         location.href="bgsim.html"
     } */
-    location.href="bgsim.html"
+    location.href="bgsim.html";
    
 }
 
