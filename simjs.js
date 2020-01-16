@@ -21,6 +21,17 @@ function sim03_next() {
     location.href="sim04.html"
 }
 
+function sim04Po_next() {
+    location.href="sim05Po.html";
+}
+function sim04Dae_next() {
+     location.href="sim05Dae.html";
+}
+
+function sim05_next() {
+    location.href="sim06.html";
+}
+
 
 function bg12mouse() {
     
