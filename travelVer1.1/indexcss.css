@@ -8,6 +8,73 @@
     padding: 30px;
 }
 
+/* 3개의 동일하지 않은 컬럼 생산 서로 옆으로 띄워진*/
+.row {
+    text-align: center;
+}
+
+/*main 컬럼*/
+.column {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    
+    height: 600px;
+}
+/*left and right 컬럼*/
+
+
+.column.side {
+    width:28%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.column.middle {
+    padding: 10px;
+    width:28%;
+    margin:10px
+}
+
+/*bg컬럼*/
+.columnBg {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+    height: 1500px;
+}
+
+.columnBg.side {
+    width: 24%;
+}
+
+.columnBg.middle {
+    width:50%;
+}
+
+/*char컬럼*/
+.columnChar {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+    height: 500px;
+    text-align: center;
+    
+}
+
+.columnChar.side {
+    width: 33%;
+    text-align: center;
+}
+
+.columnChar.middle {
+    width:33%;
+    text-align: center;
+}
+
+
 .row {
     text-align: center;
 }
@@ -28,6 +95,10 @@
 
 
 .footer {
+    float: both;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
 
 }
+

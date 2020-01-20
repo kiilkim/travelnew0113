@@ -16,36 +16,30 @@
   
     <div class="header">
         <p class="mainP">
-            언어변경:
-            <select id="id-lang" name="lang" onchange="changeLangSel()">
-                <option value="">언어선택</option>
-                <option value="kor">KOREAN</option>
-                <option value="en">ENGLISH</option>
-    
-            </select>
-            <!--english 선택하면 똑같은 위치가 언어만 영어로 바뀌는 것 구현해야함 -->
+            
+         
             
         </p>
-        <h1>피란수도_부산 ver1.1</h1>
-   <!--      <hr class="hr_main"> -->
-        <br><br><br>
+      
     
     </div>
 
     <div class ="row">
-
-        <div class="column side" style="background-color: white;"><span style="color:white">color</span>
-        </div>
-
-
+        <div class="column side" style="background-color: white;"><span style="color:white">color</span></div>
         <div class="column middle" style="background-color: white;">
+            이 이미지는 임시<br>
 
+            <img src="img/mainchar.png" width="400" height="300">
             <br><br>
-            <img src="img/main.jpg" width="400" height="300">
-            <br><br><br><br>
+            캐릭터사진 등록 <br>
+
+            <input type="file" width="120" height="160">
+
+            <br><br><br>
 
 
-            <form action="id.html" method="post" name="mainForm">
+         
+            <form action="char.html" method="post" name="mainForm">
                <!--  '김아무개'라고 우선 아이디치세요./비밀번호 설정안해도됨.<br>
                 
 
@@ -57,23 +51,22 @@
                 초기 버튼 구성
             
             -->
+                <input type="text" value="아이디를 입력하세요"><br><br><br>
 
 
                 <button class="buttonB" onclick="
-                location.href='id.html'">시작하기</button>
+                location.href='char.html'">진행하기</button>
 
-            </form> 
+
+            </form>
+        
         </div>
-
            
         <div class="column side" style="background-color: white;"><span style="color:white">
-        item</span>
-        </div>
+        item</span></div>
     </div>
-
-
     <br><br><br>
- 
+
     <div class="footer">
         <h3>역사 문화 인식은 우리를 풍요롭게 한다.</h3>
     </div>
