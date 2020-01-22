@@ -60,14 +60,51 @@ hr {
 }
 
 
-.state1, .state2, .state3 {
-   /*  float: left; */
+/* .state1, .state2, .state3 {
+     float: left; 
     border: 2px solid black;
     width: 250px;
     height: 80px;
-    display: inline-block;
+    display:inline-block;
     margin-top: 50px;
 }
+ //왜 자꾸 같이 내려갈까?
+ 
+ he major difference is that display: inline-block allows to set a width and height on the element.
+ the top and bottom margins/paddings are respected
+display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
+*/
+
+
+.state1{
+    position: relative;
+    border: 2px solid black;
+    width: 250px;
+    height: 80px;
+    display:inline-block;
+    margin-top: 80px;
+}
+
+.state2 {
+    position: relative;
+    border: 2px solid black;
+    width: 250px;
+    height: 80px;
+    display:inline-block;
+    
+
+}
+.state3 {
+    position: relative;
+    border: 2px solid black;
+    width: 250px;
+    height: 80px;
+    display:inline-block;
+    
+
+}
+
+
  .ratio1, .ratio2 {
     border: 1px solid black;
     display: inline-block;
@@ -85,24 +122,33 @@ hr {
     height: 100px;
 }
 
-/* .grid-container {
-    display:grid;
-    grid-template-columns: auto auto ;
-    background-color: aqua;
-    padding: 10px;
-}
 
-.grid-item {
-    background-color: blue;
+ .grid-bar {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    background-color:aliceblue;
+    padding: 10px;
+ }
+
+.grid-state {
+    background-color: whitesmoke;
     border:1px solid black;
     padding:20px;
     margin: 20px;
     font-size: 30px;
     text-align: center;
     grid-column: auto;
+    width: 25%;
+    display: inline-block;
+    height: auto;
 
 }
 
+progress {
+    display: inline;
+    position: relative;
+}
+/*
 .grid-item1 {
     grid-row:2;
     border: 1px solid black;
@@ -157,9 +203,26 @@ hr {
 
     <div class="content">
 
-        <div class="stateBar">
+        <div class="gird-Bar">
 
-            <div class="state1">
+            <div class="grid-state">
+                <br>
+                <span style="font-size:x-large">1950. 06. 25</span>
+                <br>
+            </div>
+
+            <div class="grid-state">
+                <img src="img/smile.jpg" width="100" height="62">
+                
+            </div>
+
+            <div class="grid-state">
+
+                <span style="font-size:x-large">진행상황:5%</span> 
+                <progress class="prog" value="5" max="100"></progress>
+            </div>
+
+          <!--   <div class="state1">
       
             </div>
 
@@ -176,7 +239,7 @@ hr {
                 진행상황 :5%
             <progress class="prog" value="5" max="100"></progress>
         
-            </div>
+            </div> -->
 
             <br>
 
