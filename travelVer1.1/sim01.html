@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+1. 이미지 사이의 공간 남을 때 줄을 코드상에서 바꿔도 이미지 벌어지는 경우있다.
+
+2. alt 이미지 대체 택스트
+
+<header> - Defines a header for a document or a section
+<nav> - Defines a container for navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent self-contained article
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details
+<summary> - Defines a heading for the <details> element
+
+
+-->
+    <title>Document</title>
+   <link href="simcss.css" rel="stylesheet">
+
+
+     
+
+</head>
+<body>
+    <script src="simjs.js">
+    </script> 
+    
+    <header>
+
+     <div id="container">
+        <!-- 왜 박스가 다 똑같이 설정했는데, 위로 올라가지?-->
+        <div class="head_state1">  
+            <span style="color: black;">1950.06.25</span>
+        </div>
+            
+        <div class="head_state2"> 
+            <img src="1.jpg">  
+        </div>
+            
+        <div class="head_state3"> 
+            <div class="state_percent"> </div>
+        </div>
+        
+        
+    
+    
+     </div>
+
+
+    </header>
+    
+    <section>
+
+      <nav>
+          <!--사진은 앞에서 등록했던 사진이 오도록, 지금은 그냥 대충 이미지 삽입
+              아이디도 앞에서 입력한 것 받아오기
+              아이템과 갯수도 앞에서 선택한 것을 받아오기, 계속 선택마다 증감표시
+          -->
+        <ul>
+          <li><img src="img/mainchar.png" width="100px" height="150"></li><br>
+          <li><input type="text" value="김아무개"></li><br>
+          <li>아이템</li><br>
+        </ul>
+
+        <table class="nav_table">
+            <tr>
+                <th class="nav_th">아이템</th>
+                <th class="nav_th">갯수</th>
+            </tr>
+            <tr>
+                <td class="nav_td">빵</td>
+                <td class="nav_td">1</td>
+            </tr>
+
+        </table>
+      </nav>
+      
+      <article class="article_sim">
+          <br><br>
+          <img src="img/factory.jpg">
+          <br>'1950. 06. 25 서울근교'
+
+          <p>
+            어려운 환경에서도 '심아무개'는 집에서 멀지 않은 <br>
+            '<input type="text">'에 가서 열심히 일을 하며 살아간다.
+            <br>
+            <br>
+            <input type="text">안에 들어갈 말을 고르시오.<br><br>
+            <input type="checkbox">간장  <input type="checkbox">공장 <input type="checkbox">공전
+
+          </p>
+       
+      </article>
+    </section>
+    
+
+    <footer>
+      <p>You know? it's the best way to know about a country you interested in<br>
+    if you know about culture and history and languege of that country.</p>
+    </footer>
+    
+</body>
+</html>

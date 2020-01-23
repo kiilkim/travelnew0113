@@ -21,10 +21,10 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:whitesmoke;
+  background-color:white;
   overflow-x: hidden;
   text-align: center;
-  border: 1px solid black;
+  
 }
 
 hr {
@@ -32,20 +32,27 @@ hr {
      margin:30px;
 }
 
-.sidenav a{
+/* .sidenav a{
     background-color: whitesmoke;
     color:wheat;
     padding: 16px;
     text-decoration: none;
     display: block;
 
-}
+} */
 
 .navTable, .navTh ,.navTd {
-    border: 1px solid black;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
 }
 .navTable {
     margin-left: 80px;
+}
+
+.sidenavImg {
+    border: 1px solid black;
+
 }
 /* .sidenav a:hover {
   background-color: #ddd;
@@ -133,14 +140,14 @@ display: inline-block does not add a line-break after the element, so the elemen
 .grid-state {
     background-color: whitesmoke;
     border:1px solid black;
-    padding:20px;
-    margin: 20px;
-    font-size: 30px;
+    padding:0px;
+    margin: 10px;
+    font-size: 15px;
     text-align: center;
     grid-column: auto;
-    width: 25%;
+    width: 18%;
     display: inline-block;
-    height: auto;
+    height: 80px;
 
 }
 
@@ -174,10 +181,12 @@ progress {
 
     <div class="sidenav">
         <br><br><br>
+
         <img class="sidenavImg" src="img/mainchar.png" width="150" height="200">
-       
-        <input tpye="text" value="아이디">
-        <br><br>
+       <br><br>
+        <input tpye="text" value="심아무개">
+
+        <br><br><br>
         
         <table class="navTable">
             <tr>
@@ -206,20 +215,24 @@ progress {
         <div class="gird-Bar">
 
             <div class="grid-state">
-                <br>
-                <span style="font-size:x-large">1950. 06. 25</span>
-                
+                <div>
+                <span style="font-size:x-large;padding: 20px;">1950. 06. 25</span>
+                </div>
             </div>
 
             <div class="grid-state">
-                <img src="img/smile.jpg" width="100" height="62">
                 
+                <div>   
+                <img src="img/smile.jpg" width="100" height="40">
+                </div>
+            
             </div>
 
             <div class="grid-state">
-
+                 <div>
                 <span style="font-size:x-large">진행상황:5%</span> 
                 <progress class="prog" value="5" max="100"></progress>
+                 </div>
             </div>
 
           <!--   <div class="state1">
@@ -249,7 +262,7 @@ progress {
         </div>
 
         <br>
-        <hr>
+       
     
 
         <div class="mainStory">
@@ -276,7 +289,7 @@ progress {
         </div>
 
         <br><br><br><br>
-        <hr>
+      
 
         <div class="footer">
             <br><br>
